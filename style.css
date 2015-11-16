@@ -1,0 +1,127 @@
+/* IMPORTING FONTS */
+
+@font-face {
+    font-family: 'anonymousregular';
+    src: url('fonts/anonymous-webfont.eot');
+    src: url('fonts/anonymous-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/anonymous-webfont.woff2') format('woff2'),
+         url('fonts/anonymous-webfont.woff') format('woff'),
+         url('fonts/anonymous-webfont.ttf') format('truetype'),
+         url('fonts/anonymous-webfont.svg#anonymousregular') format('svg');
+}
+
+/* GENERAL */
+html, body{
+    width: 100%;  /** A faire, toujours.**/
+    height: 100%;
+}
+
+body{
+  margin: 0;
+
+  background-image: url(img/stripe.png), url(img/noise.png);
+  background-repeat: repeat-x, repeat;
+  background-position: 0 0%;
+  background-attachment: fixed;
+  background-color: #1d2b2a;
+
+  font-family: anonymousregular, monospace;
+  line-height: 2em;
+  -moz-animation: blink 0.1s steps(2, start) infinite, skip 7s linear infinite, flicker 0.1s steps(2, start) infinite;
+  -webkit-animation: blink 0.1s steps(2, start) infinite, skip 7s linear infinite, flicker 0.1s steps(2, start) infinite;
+  animation: blink 0.1s steps(2, start) infinite, skip 7s linear infinite, flicker 0.1s steps(2, start) infinite;
+}
+
+/* SLIDES */
+
+.container {
+display: inline;
+opacity: 0;
+}
+
+#slide1, #slide2, #slide3{
+  height: 100%;
+  padding: 50px 15px;
+  border-bottom: 1px dashed white;
+}
+
+#slide1{
+  background: url(img/visu1.png) center no-repeat fixed;
+}
+
+#slide2{
+ background: url(img/visu2.png) center no-repeat fixed;
+
+}
+
+#slide3{
+  background: url(img/visu1.png) center no-repeat fixed;
+
+}
+
+/* Bouton next */
+
+.clickhere{
+  background: url('img/arrow.png') center no-repeat;
+  border: 1px solid white;
+  height: 150px;
+  width: 150px;
+  display: none;
+  -moz-animation: shake 1s infinite;
+  -webkit-animation: shake 1s infinite;
+  animation: shake 1s infinite;
+
+}
+
+/* TEXT TYPING */
+.element{
+  max-width: 750px;
+  padding-top: 15px;
+  height: 80%;
+/* background-color: rgba(110, 110, 110, 0.5);
+*/
+  margin: auto;
+
+  word-wrap: break-word;    
+  overflow: hidden;
+
+  font-family: anonymousregular;    
+  color: #fff;
+  font-size: 0.8em;
+  text-align: left;
+}
+
+/**  Petite astuce pour faire un curseur **/
+
+.typed-cursor{ /** On masque le curseur par défaut**/
+    display: none;
+}
+
+.element::after{ /** on rajoute un rectangle blanc après l'élément**/
+    visibility: visible;
+    content: '';
+    background-color: #fff;
+    display: inline-block;
+    position: relative;
+    width: 0.5em;
+    height: 1em;
+    top: 2px;
+    margin-left: 0;
+    /** l'animation de clignotement **/
+    moz-animation: ready 1s steps(2, start) 25s infinite;
+    -webkit-animation: ready 1s steps(2, start) 25s infinite;
+    animation: ready 1s steps(2, start) 25s infinite;
+  }
+
+/* Petits réglages pour adapter la taille du texte sur mobile */
+html { font-size: 100%; }
+
+/* Medium screens (640px) */
+@media (min-width: 40rem) { 
+  html { font-size: 112%; }
+}
+
+/* Large screens (1024px) */
+@media (min-width: 64rem) { 
+  html { font-size: 120%; }
+}
