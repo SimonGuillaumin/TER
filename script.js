@@ -1,6 +1,8 @@
 $(document).ready(function() {
 
-        $('.container').animate({opacity:1},600);
+        $('.container').animate({opacity:1},600); /* fadeIn du conteneur*/
+        $('.clickhere').smoothScroll({speed:800}); /* un joli scroll quand on clique sur les fleches*/
+
         $('.text1').typed({
         strings: [
         "Voici une phrase.<br/>Puis une autre phrase suivie d'une pause.^1000<br/>"
@@ -16,6 +18,7 @@ $(document).ready(function() {
             });
         },
         });
+
 
 
     var waypoints = $('#slide2').waypoint({
@@ -35,6 +38,7 @@ $(document).ready(function() {
                     });
                 },
             });
+
         }, 
         offset: 150 
     });
@@ -42,7 +46,7 @@ $(document).ready(function() {
 
     var waypoints = $('#slide3').waypoint({
       handler: function(direction) {
-         $('.text3').typed({
+        $('.text3').typed({
             strings: [
             "C’était une montre comme on n’en faisait plus en 2048. ^1500"
             ],
@@ -58,6 +62,7 @@ $(document).ready(function() {
             },
 
         });
+
      },
         offset: 150 
     });
