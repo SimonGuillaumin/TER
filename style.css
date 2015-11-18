@@ -68,7 +68,8 @@ opacity: 0;
   height: 150px;
   width: 150px;
   display: none;
-  float: right;
+  position: absolute;
+  right: 0;
   -moz-animation: shake 1s infinite;
   -webkit-animation: shake 1s infinite;
   animation: shake 1s infinite;
@@ -81,7 +82,7 @@ opacity: 0;
 /* background-color: rgba(110, 110, 110, 0.5);
 */
   margin: auto;
-
+  height: 70%;
   word-wrap: break-word;    
 
   font-family: anonymousregular;    
