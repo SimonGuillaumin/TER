@@ -1,8 +1,5 @@
 $(document).ready(function() {
 
-/*    $.localScroll();    */
-
-    $('body').click(function () {
         $('.container').animate({opacity:1},600);
         $('.text1').typed({
         strings: [
@@ -14,13 +11,12 @@ $(document).ready(function() {
         loopCount: false,
         showCursor: false,
         callback : function () {
-            $('.clickhere').fadeIn(400, function(){
-                $('.clickhere').css('display', 'inline-block');
+            $('.arrow1').fadeIn(400, function(){
+                $('.arrow1').css('display', 'inline-block');
             });
         },
         });
 
-    });
 
     var waypoints = $('#slide2').waypoint({
         handler: function(direction) {
@@ -32,7 +28,12 @@ $(document).ready(function() {
                 backDelay: 300,
                 loop: false,
                 loopCount: false,
-                showCursor: false
+                showCursor: false, 
+                callback : function () {
+                    $('.arrow2').fadeIn(400, function(){
+                        $('.arrow2').css('display', 'inline-block');
+                    });
+                },
             });
         }, 
         offset: 150 
@@ -49,11 +50,16 @@ $(document).ready(function() {
             backDelay: 300,
             loop: false,
             loopCount: false,
-            showCursor: false
+            showCursor: false, 
+            callback : function () {
+                $('.arrow3').fadeIn(400, function(){
+                    $('.arrow3').css('display', 'inline-block');
+                });
+            },
+
         });
      },
         offset: 150 
     });
-
 
 });

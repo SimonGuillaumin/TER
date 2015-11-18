@@ -41,7 +41,7 @@ opacity: 0;
 
 #slide1, #slide2, #slide3{
   height: 100%;
-  padding: 50px 15px;
+  padding: 10px 15px;
   border-bottom: 1px dashed white;
 }
 
@@ -62,11 +62,13 @@ opacity: 0;
 /* Bouton next */
 
 .clickhere{
-  background: url('img/arrow.png') center no-repeat;
-  border: 1px solid white;
+  background-image: url('img/arrow.png');
+  background-repeat: no-repeat;
+  background-position: center center;
   height: 150px;
   width: 150px;
   display: none;
+  float: right;
   -moz-animation: shake 1s infinite;
   -webkit-animation: shake 1s infinite;
   animation: shake 1s infinite;
@@ -76,14 +78,11 @@ opacity: 0;
 /* TEXT TYPING */
 .element{
   max-width: 750px;
-  padding-top: 15px;
-  height: 80%;
 /* background-color: rgba(110, 110, 110, 0.5);
 */
   margin: auto;
 
   word-wrap: break-word;    
-  overflow: hidden;
 
   font-family: anonymousregular;    
   color: #fff;
