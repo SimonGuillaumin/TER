@@ -3,6 +3,11 @@ $(document).ready(function() {
         $('.container').animate({opacity:1},600); /* fadeIn du conteneur*/
         $('.clickhere').smoothScroll({speed:800}); /* un joli scroll quand on clique sur les fleches*/
 
+        $.stellar({ /* On applique le paralax à l'ensemble du document */
+            horizontalScrolling:false, /* fix a bg position issue */
+            verticalOffset: -200,
+        });
+
         $('.text1').typed({
         strings: [
         "Voici une phrase.<br/>Puis une autre phrase suivie d'une pause.^1000<br/>"
