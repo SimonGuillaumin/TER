@@ -2,15 +2,17 @@ $(document).ready(function() {
 
         $('.container').animate({opacity:1},600); /* fadeIn du conteneur*/
         $('.clickhere').smoothScroll({speed:800}); /* un joli scroll quand on clique sur les fleches*/
-
+        $('.start').smoothScroll({speed:800});
         $.stellar({ /* On applique le paralax à l'ensemble du document */
             horizontalScrolling:false, /* fix a bg position issue */
-            verticalOffset: -200,
+            /*verticalOffset: -200,*/
         });
+        var waypoints = $('#slide1').waypoint({
+            handler: function(direction) {
 
         $('.text1').typed({
         strings: [
-        "Voici une phrase.<br/>Puis une autre phrase suivie d'une pause.^1000<br/>"
+        "\"Prolongez votre vie grâce au programme ANEMA !^1000 <br/>Avec nous, votre santé est mise à jour.^1000 <br/> Rejoignez Anema !\" <br/><span class=\"quoted\">Matt Welboth, ingénieur chez Alphabet Science. </span>"
         ],
         typeSpeed: 1, 
         backDelay: 300,
@@ -23,7 +25,8 @@ $(document).ready(function() {
             });
         },
         });
-
+        }, 
+    });
 
 
     var waypoints = $('#slide2').waypoint({

@@ -39,14 +39,14 @@ display: inline;
 opacity: 0;
 }
 
-#slide1, #slide2, #slide3{
+#intro, #slide1, #slide2, #slide3{
   height: 100%;
   padding: 10px 15px;
   border-bottom: 1px dashed white;
 }
 
 #slide1{
-  background: url(img/visu1.png) center no-repeat fixed;
+  background: url(img/temoin1.png) center no-repeat fixed;
 }
 
 #slide2{
@@ -57,6 +57,30 @@ opacity: 0;
 #slide3{
   background: url(img/visu1.png) center no-repeat fixed;
 
+}
+
+#intro{
+  /*background: url(img/logoanema.png) center no-repeat fixed;*/
+  text-align: center;
+}
+
+.logo{
+  opacity: 0.5;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  -moz-animation: shake 1s infinite;
+  -webkit-animation: shake 1s infinite;
+  animation: shake 1s infinite;
+
+}
+.logo:hover{
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 /* Bouton next */
@@ -77,12 +101,19 @@ opacity: 0;
 }
 
 /* TEXT TYPING */
+.quoted{
+  font-style: italic;
+}
+
 .element{
-  max-width: 750px;
+  max-width: 500px;
 /* background-color: rgba(110, 110, 110, 0.5);
 */
+  padding-top: 20px;
   margin: auto;
-  height: 70%;
+  margin-bottom: 25%;
+  /*border: 3px dashed #00afd8;*/
+
   word-wrap: break-word;    
 
   font-family: anonymousregular;    
