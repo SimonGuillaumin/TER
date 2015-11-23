@@ -12,7 +12,7 @@ $(document).ready(function() {
 
         $('.text1').typed({
         strings: [
-        "\"Prolongez votre vie grâce au programme ANEMA !^1000 <br/>Avec nous, votre santé est mise à jour.^1000 <br/> Rejoignez Anema !\" <br/><span class=\"quoted\">Matt Welboth, ingénieur chez Alphabet Science. </span>"
+        "\"Votre vie vous échappe ?^1000 <br/> Prolongez-là, et donnez-lui du sens! ^1000 Grâce au programme ANEMA, votre santé est mise à jour.^1000 Rejoignez-nous !\" <br/><span class=\"quoted\">Matt Welboth, ingénieur chez Alphabet Science. </span>"
         ],
         typeSpeed: 1, 
         backDelay: 300,
@@ -33,9 +33,8 @@ $(document).ready(function() {
         handler: function(direction) {
             $('.text2').typed({
                 strings: [
-                "Cette vision le replongea 5 ans en arrière.^1500 Le jour de ses 60 ans. ^1500"
+                "\"Depuis que j'ai intégré Anema, ma vie a enfin un sens.^1500 Je ne passe plus mes journées enfermée chez moi, et je me sens utile à la société !^1000 Je le recommande à tous mes proches car, selon moi, ^300 le futur, ^300 c'est ANEMA !\" ^500 <span class=\"quoted\"> Julie C., 35 ans </span>"
                 ],
-                typeSpeed: 0,
                 backDelay: 300,
                 loop: false,
                 loopCount: false,
